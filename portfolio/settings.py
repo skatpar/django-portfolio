@@ -81,29 +81,29 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-#
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.postgresql',
-#        'NAME': 'portfoliodb',
-#        'USER':'postgres',
-#        'PASSWORD':'1234',
-#        'HOST':'localhost',
-#        'PORT':'5432',
-#    }
-#}
-
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dftlnbvjbtg997',
-        'USER':'hcodgkyncgeukx',
-        'PASSWORD':'83ff7bd552fb577b51fe26750a4ceba0621cc91eeeb3e3a8e5d163002d7f19de',
-        'HOST':'ec2-50-19-127-158.compute-1.amazonaws.com',
+        'NAME': 'portfoliodb',
+        'USER':'postgres',
+        'PASSWORD':'1234',
+        'HOST':'localhost',
         'PORT':'5432',
     }
 }
+
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': 'dftlnbvjbtg997',
+#        'USER':'hcodgkyncgeukx',
+#        'PASSWORD':'83ff7bd552fb577b51fe26750a4ceba0621cc91eeeb3e3a8e5d163002d7f19de',
+#        'HOST':'ec2-50-19-127-158.compute-1.amazonaws.com',
+#        'PORT':'5432',
+#    }
+#}
 
 
 
