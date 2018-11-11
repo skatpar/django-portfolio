@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
 #ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['fierce-shore-48632.herokuapp.com']
+ALLOWED_HOSTS = ['django-portfolio-saif.herokuapp.com']
 
 
 # Application definition
@@ -142,16 +142,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+#PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-WHITENOISE_USE_FINDERS = True
+#WHITENOISE_USE_FINDERS = True
 STATIC_URL = '/static/'
 STATIC_ROOT =  os.path.join(BASE_DIR,'static')
 
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT =  BASE_DIR
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static'),
-)
+#STATICFILES_DIRS = (
+#    os.path.join(PROJECT_ROOT, 'static'),
+#)
