@@ -33,7 +33,7 @@
           <p>
             <a href="mailto:saifullahkatpar@gmail.com" class="btn btn-primary my-2">Email me</a>
           </p>
-          <img src="{% static 'saif.jpg'%}" height=300></img>
+          <img src="{% static 'saif.jpg'%}" class="rounded" height=300></img>
         </div>
       </section>
 
@@ -47,7 +47,7 @@
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="{{ project.image.url}}">
                 <div class="card-body">
-                  <p class="card-text summary">{{project.title}}</p>
+                  <p class="card-text summary h6" style="color:black;">{{project.title}}</p>
                 </div>
               </div>
               </a>
