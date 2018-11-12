@@ -26,11 +26,10 @@
           <p class="lead text-muted">{{project.summary}}</p>
           <img src="{{ project.image.url }}" height=300></img>          
         </div>		        
-        <div>
-        	<a href="{{ project.link }}" class="btn btn-dark">See Project</a><br>
+        <div class="container">
+        	<a href="{{ project.link }}" class="btn btn-dark">See Project</a>
         	<a href="{% url 'home'%}" class="btn btn-primary my-2">Back</a>
         </div>
-
       </section>
 
     </main>
