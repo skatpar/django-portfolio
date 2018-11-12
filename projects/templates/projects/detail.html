@@ -25,12 +25,11 @@
           <h1 class="jumbotron-heading">Project Detail </h1>
           <p class="lead text-muted">{{project.summary}}</p>
           <img src="{{ project.image.url }}" height=300></img>          
+          <p>
+	      	<a href="{{ project.link }}" class="btn btn-dark">See Project</a><br>
+    		<a href="{% url 'home'%}" class="btn btn-primary my-2">Back</a>
+	    </p>
         </div>		        
-        <br>
-        <div class="container">
-        	<a href="{{ project.link }}" class="btn btn-dark">See Project</a><br>
-        	<a href="{% url 'home'%}" class="btn btn-primary my-2">Back</a>
-        </div>
       </section>
 
     </main>

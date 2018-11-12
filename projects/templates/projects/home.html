@@ -30,30 +30,13 @@
         <div class="container">
           <h1 class="jumbotron-heading">Saif </h1>
           <p class="lead text-muted">Hi my name is Saif, I enjoy making apps and websites. I also enjoy watching Scorpion!</p>
+          <p>
             <a href="mailto:saifullahkatpar@gmail.com" class="btn btn-primary my-2">Email me</a>
+          </p>
           <img src="{% static 'saif.jpg'%}" height=300></img>
         </div>
       </section>
 
-      <div class="album py-5 bg-light">
-        <div class="container">
-          <div class="row">
-            {% for project in projects.all %}
-
-            <div class="col-md-4">
-              <a href="{% url 'detail' project.id %}">
-              <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" src="{{ project.image.url}}">
-                <div class="card-body">
-                  <p class="card-text summary">{{project.title}}</p>
-                </div>
-              </div>
-              </a>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-      </div>
 
     </main>
 
