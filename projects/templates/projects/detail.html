@@ -32,25 +32,6 @@
         </div>
       </section>
 
-      <div class="album py-5 bg-light">
-        <div class="container">
-          <div class="row">
-            {% for project in projects.all %}
-
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" src="{{ project.image.url}}">
-                <div class="card-body">
-                  <p class="card-text">{{project.title}}</p>
-                </div>
-              </div>
-            </div>
-
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-
     </main>
 
     <!-- Bootstrap core JavaScript
