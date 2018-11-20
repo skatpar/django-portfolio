@@ -17,7 +17,12 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    color:black;
   }
+    a:hover{
+      text-decoration: none;
+  }
+
     </style>
 </head>
 
@@ -47,7 +52,7 @@
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="{{ project.image.url}}">
                 <div class="card-body">
-                  <p class="card-text summary h6" style="color:black;">{{project.title}}</p>
+                  <p class="card-text summary h6">{{project.title}}</p>
                 </div>
               </div>
               </a>
